@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  php:
+    container_name: php_apache
+    build: ./php
+    volumes:
+      - ./php.ini:/usr/local/etc/php/php.ini
+      - ./html:/var/www/html
+    ports:
+      - 8080:80
+  mysql:
+    container_name: mysql
+    image: mysql:5.7
+    volumes:
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=Wani_12007_dad8e9edc4306f8859d5e791f5b6f1be42178ac8
+      - MYSQL_DATABASE=test_db
+      - MYSQL_USER=wani
+      - MYSQL_PASSWORD=waniwani
