@@ -1,0 +1,2 @@
+key = "ABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABCABC"
+flag = "FLAG{xor_c1ph3r_is_vulnera6le_70_kn0wn_plain7ext_@ttack!}"

@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  binary:
+    build: ./
+    ports:
+      - 60000:60000
